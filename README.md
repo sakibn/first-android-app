@@ -4,7 +4,7 @@ Starter code for the individual android app assignment
 Write an Android App called Grade Calculator determines a final course grade made up of weighted categories of grades. 
 ###Grading:
 
-###Category	| % weight
+Category	| % weight
 --------------------
 Individual Assignments	| 20
 
@@ -28,25 +28,27 @@ F:  < 60%
 The calculations are based on the number of points earned in each of the four categories.  Therefore, your program will prompt the user for the points earned and the points possible in each category; calculate the final grade as a percentage of the points possible; and display the result.  The number displayed should be formatted in fixed-point notation, with one decimal point of precision. In addition, display what letter grade (on a 10-point scale) corresponds to the calculated value.
 The app will display an image of your choice and specific identifying *your name
 *the course number and semester
+
 Your program will allow the user to enter the points earned and points possible for each of the categories shown above. 
+
    		Sara Student 
    CMSC 355, Spring 2019
    
 Enter the Individual Assignment points earned: 		_______
 
-Enter the Individual Assignment points possible: 		_______
+Enter the Individual Assignment points possible: 	_______
 
-Enter the Team Project points earned: 				_______
+Enter the Team Project points earned: 				   _______
 
-Enter the Team Project points possible:  			_______
+Enter the Team Project points possible:  			   _______
 
-Enter the Midterm Exam points earned: 				_______
+Enter the Midterm Exam points earned: 				   _______
 
-Enter the Midterm Exam points possible: 			_______
+Enter the Midterm Exam points possible: 			   _______
 
-Enter the Final Exam points earned: 				_______
+Enter the Final Exam points earned: 				   _______
 
-Enter the Final Exam points possible:  			_______
+Enter the Final Exam points possible:  			   _______
 
 
    Your course grade calculates to _______
