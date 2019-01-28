@@ -24,7 +24,9 @@ The calculations are based on the number of points earned in each of the four ca
 The app will display an image of your choice and specific identifying *your name
 *the course number and semester
 Your program will allow the user to enter the points earned and points possible for each of the categories shown above. 
-   		Sara Student 
+   		
+         `Sara Student 
+  
   CMSC 355, Spring 2019
    
 Enter the Individual Assignment points earned: 		_______
@@ -44,7 +46,7 @@ Enter the Final Exam points earned: 				_______
 Enter the Final Exam points possible:  			_______
 
 
-   Your course grade calculates to _______
+   Your course grade calculates to _______`
 
 Test your application to be sure that it produces the correct output in a visually pleasing arrangement.
 
