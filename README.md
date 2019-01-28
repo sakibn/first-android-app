@@ -11,6 +11,7 @@ Write an Android App called Grade Calculator determines a final course grade mad
 |Final Exam	| 30|
 
 ###Grading scheme:
+
 |Letter Grade|Overall %|
 | :---: |----------|
 |A:  | >= 90%|
