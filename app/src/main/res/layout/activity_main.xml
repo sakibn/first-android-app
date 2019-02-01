@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:digits="0123456789."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="individual assignment points earned:"
+        android:text="@string/individual_assignment_points_earned"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -168,7 +169,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Enter the Midterm Exam points earned: "
+        android:text="@string/enter_the_midterm_exam_points_earned"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         tools:text="Enter the Midterm Exam points earned: " />
@@ -231,7 +232,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
@@ -256,7 +257,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:background="@color/colorAccent"
-        android:text="Clear"
+        android:text="@string/clear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText9" />
 
@@ -265,7 +266,7 @@
         android:layout_width="0dp"
         android:layout_height="88dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

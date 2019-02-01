@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText individual_possible;
@@ -56,29 +57,34 @@ public class MainActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double individual_earned1 = Double.valueOf(individual_earned.getText().toString().trim());
-                double individual_possible1 = Double.valueOf(individual_possible.getText().toString().trim());
-                double team_earned1 = Double.valueOf(team_earned.getText().toString().trim());
-                double team_possible1 = Double.valueOf(team_possible.getText().toString().trim());
-                double midterm_earned1 = Double.valueOf(midterm_earned.getText().toString().trim());
-                double midterm_possible1 = Double.valueOf(midterm_possible.getText().toString().trim());
-                double final_earned1 = Double.valueOf(final_earned.getText().toString().trim());
-                double final_possible1 = Double.valueOf(final_possible.getText().toString().trim());
+                try {
+                    double individual_earned1 = Double.valueOf(individual_earned.getText().toString().trim());
+                    double individual_possible1 = Double.valueOf(individual_possible.getText().toString().trim());
+                    double team_earned1 = Double.valueOf(team_earned.getText().toString().trim());
+                    double team_possible1 = Double.valueOf(team_possible.getText().toString().trim());
+                    double midterm_earned1 = Double.valueOf(midterm_earned.getText().toString().trim());
+                    double midterm_possible1 = Double.valueOf(midterm_possible.getText().toString().trim());
+                    double final_earned1 = Double.valueOf(final_earned.getText().toString().trim());
+                    double final_possible1 = Double.valueOf(final_possible.getText().toString().trim());
 
-                double sum= grade1(individual_earned1,individual_possible1,team_earned1,
-                        team_possible1,midterm_earned1,midterm_possible1,final_earned1,final_possible1);
-                if(sum>=90){
-                    grade.setText("A");
-                }else if(sum>=80 && sum<90){
-                    grade.setText("B");
-                }else if(sum>=70 && sum<80){
-                    grade.setText("C");
-                }else if(sum>=60 && sum<70){
-                    grade.setText("D");
-                }else if(sum<60){
-                    grade.setText("F");
+                    double sum = grade1(individual_earned1, individual_possible1, team_earned1,
+                            team_possible1, midterm_earned1, midterm_possible1, final_earned1, final_possible1);
+                    if (sum >= 90) {
+                        grade.setText("A");
+                    } else if (sum >= 80 && sum < 90) {
+                        grade.setText("B");
+                    } else if (sum >= 70 && sum < 80) {
+                        grade.setText("C");
+                    } else if (sum >= 60 && sum < 70) {
+                        grade.setText("D");
+                    } else if (sum < 60) {
+                        grade.setText("F");
+                    }
+                }catch (Exception e){
+                    Toast.makeText(MainActivity.this,"Please put number", Toast.LENGTH_LONG).show();
                 }
-            }
+                }
+
         });
     }
     public double grade1(double individual_earned, double individual_possible, double team_earned,

@@ -13,4 +13,7 @@
     <string name="final_exam_earned">final_exam_earned</string>
     <string name="midterm_exam_possible">midterm_exam_possible</string>
     <string name="individual_asgn_1">individual_asgn_1</string>
+    <string name="enter_the_midterm_exam_points_earned">Enter the Midterm Exam points earned:</string>
+    <string name="individual_assignment_points_earned">individual assignment points earned:</string>
+    <string name="clear">Clear</string>
 </resources>
