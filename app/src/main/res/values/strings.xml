@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">asgn2</string>
+    <string name="nazmus_saqib">Nazmus Saqib</string>
+    <string name="cmsc_255_spring_2019">CMSC 255, Spring 2019</string>
+    <string name="team_project_possible">team_project_points_possible</string>
+    <string name="individual_earned">team_project @string/individual_points_earned</string>
+    <string name="individual_assignment_earned">Enter the Individual Assignment points earned:</string>
+    <string name="button1">Submit</string>
+    <string name="button2">button2</string>
+    <string name="textview">TextView</string>
+    <string name="result">0</string>
+    <string name="final_exam_possible">Final_exam_possible</string>
+    <string name="final_exam_earned">final_exam_earned</string>
+    <string name="midterm_exam_possible">midterm_exam_possible</string>
+    <string name="individual_asgn_1">individual_asgn_1</string>
+</resources>
