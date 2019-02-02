@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:digits="0123456789."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +147,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Enter the Team Project points earned: "
+        android:text="@string/enter_the_team_project_points_earned"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -213,7 +212,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Your course grade calculates to: "
+        android:text="@string/your_course_grade_calculates_to"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -223,7 +222,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Enter the Individual Assignment points possible: "
+        android:text="@string/enter_the_individual_assignment_points_possible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 

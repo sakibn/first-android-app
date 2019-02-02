@@ -16,4 +16,7 @@
     <string name="enter_the_midterm_exam_points_earned">Enter the Midterm Exam points earned:</string>
     <string name="individual_assignment_points_earned">individual assignment points earned:</string>
     <string name="clear">Clear</string>
+    <string name="enter_the_individual_assignment_points_possible">Enter the Individual Assignment points possible:</string>
+    <string name="enter_the_team_project_points_earned">Enter the Team Project points earned:</string>
+    <string name="your_course_grade_calculates_to">Your course grade calculates to:</string>
 </resources>
