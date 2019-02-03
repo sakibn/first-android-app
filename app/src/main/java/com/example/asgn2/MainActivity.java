@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+
 public class MainActivity extends AppCompatActivity {
     EditText individual_possible;
     EditText individual_earned;
@@ -67,18 +70,38 @@ public class MainActivity extends AppCompatActivity {
                     double final_earned1 = Double.valueOf(final_earned.getText().toString().trim());
                     double final_possible1 = Double.valueOf(final_possible.getText().toString().trim());
 
+                    if(individual_possible1 <1 || team_possible1 <1 || midterm_possible1 <1 || final_possible1 <1){
+                        Toast.makeText(MainActivity.this, "One or more possible number has to be greater than zero.", Toast.LENGTH_LONG).show();
+                    }
+
                     double sum = grade1(individual_earned1, individual_possible1, team_earned1,
                             team_possible1, midterm_earned1, midterm_possible1, final_earned1, final_possible1);
-                    if (sum >= 90) {
-                        grade.setText("A");
-                    } else if (sum >= 80 && sum < 90) {
-                        grade.setText("B");
-                    } else if (sum >= 70 && sum < 80) {
-                        grade.setText("C");
-                    } else if (sum >= 60 && sum < 70) {
-                        grade.setText("D");
-                    } else if (sum < 60) {
-                        grade.setText("F");
+
+                    if (sum % 1 !=0) {
+                        DecimalFormat f = new DecimalFormat("##.0");
+                        if (sum >= 90) {
+                            grade.setText( f.format(sum) + " (A)");
+                        } else if (sum >= 80 && sum < 90) {
+                            grade.setText( f.format(sum) + " (B)");
+                        } else if (sum >= 70 && sum < 80) {
+                            grade.setText( f.format(sum) + " (C)");
+                        } else if (sum >= 60 && sum < 70) {
+                            grade.setText( f.format(sum) + " (D)");
+                        } else if (sum < 60) {
+                            grade.setText( f.format(sum) + " (F)");
+                        }
+                    }else{
+                        if (sum >= 90) {
+                            grade.setText( sum + " (A)");
+                        } else if (sum >= 80 && sum < 90) {
+                            grade.setText( sum + " (B)");
+                        } else if (sum >= 70 && sum < 80) {
+                            grade.setText( sum + " (C)");
+                        } else if (sum >= 60 && sum < 70) {
+                            grade.setText( sum + " (D)");
+                        } else if (sum < 60) {
+                            grade.setText( sum + " (F)");
+                        }
                     }
                 }catch (Exception e){
                     Toast.makeText(MainActivity.this,"Please put number", Toast.LENGTH_LONG).show();
